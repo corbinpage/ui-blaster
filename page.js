@@ -1,22 +1,18 @@
-function getSelectionText() {
-    var range = $.Range.current();
-    var text = "";
-    var complete = "";
+$("html").click(function(e){
+  console.log("div: "+ event.target.nodeName)
 
-    if (!!(range.toString())) {
-        text = range.toString();
-        complete = range.start('-20').end('+20').toString();
-    }  
-    return [text, complete];
-}
 
-chrome.runtime.onMessage.addListener(
-  function(request, sender, sendResponse) {
-    console.log("Typo Blaster message received...");
-    var textArray = getSelectionText();
-    sendResponse({text:           textArray[0],
-                  complete_text:  textArray[1],
-                  url:            document.URL,
-                  domain:         window.location.host});
+  s = window.getSelection();
+  var range = s.getRangeAt(0);
+  var node = s.anchorNode;
+  while(range.toString().indexOf(' ') != 0) {                 
+    range.setStart(node,(range.startOffset -1));
   }
-);
+  range.setStart(node, range.startOffset +1);
+  do{
+    range.setEnd(node,range.endOffset + 1);
+
+  }while(range.toString().indexOf(' ') == -1 && range.toString().trim() != '');
+  var str = range.toString().trim();
+  console.log("word: "+ str)
+});
