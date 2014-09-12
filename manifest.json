@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+
+  "name": "Typo Blaster",
+  "description": "Blast away typos and make the internet a safer place for the kids.",
+  "version": "0.1",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "Blast the typo!",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*","https://*/*"],
+      "js": ["jquery-2.1.1.min.js", "jquerypp.custom.js", "page.js"]
+    }
+  ],
+  "icons": { "16": "icon16.png",
+           "48": "icon48.png",
+          "128": "icon128.png" },
+  "content_security_policy": "script-src 'self' https://apis.google.com; object-src 'self'"
+
+}
+

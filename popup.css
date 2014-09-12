@@ -1,0 +1,88 @@
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  /*color: #333;*/
+  background-color: #fff;
+}
+
+.help-block {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 10px;
+  color: #737373;
+}
+
+.warning::-webkit-input-placeholder {
+    color: red;
+    font-weight: bold;
+}
+
+.invisible {
+  display: none;
+}
+
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0px;
+  font: inherit;
+  color: inherit;
+  display: block;
+}
+
+textarea {
+  width: 300px;
+  max-width: 750px;
+}
+
+#textinput {
+  width: 70%;
+}
+
+button {
+  display: inline;
+  overflow: visible;
+  text-transform: none;
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+.btn-success {
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active,
+.btn-success.active,
+.open > .dropdown-toggle.btn-success {
+  color: #fff;
+  background-color: #449d44;
+  border-color: #398439;
+}
+
+.btn-danger {
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger:active,
+.btn-danger.active,
+.open > .dropdown-toggle.btn-danger {
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #ac2925;
+}

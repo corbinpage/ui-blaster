@@ -1,0 +1,31 @@
+
+https://docs.google.com/spreadsheets/d/1WngGKZHauwBqRxgC5E6DFMiJ-J8BDlN3mMaBfF4RE0M/pubhtml
+
+
+GET https://spreadsheets.google.com/feeds/list/1WngGKZHauwBqRxgC5E6DFMiJ-J8BDlN3mMaBfF4RE0M/1/public/full
+
+POST https://spreadsheets.google.com/feeds/list/1WngGKZHauwBqRxgC5E6DFMiJ-J8BDlN3mMaBfF4RE0M/1/public/full
+
+
+In the body of the POST request, place the Atom entry element you created above, using the application/atom+xml content type.
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<entry xmlns="http://www.w3.org/2005/Atom"
+    xmlns:gsx="http://schemas.google.com/spreadsheets/2006/extended">
+  <gsx:id>1</gsx:id>
+  <gsx:status>1</gsx:status>
+  <gsx:user_email>1</gsx:user_email>
+  <gsx:url domain>1</gsx:url domain>
+  <gsx:highlighted_text>1</gsx:highlighted_text>
+  <gsx:complete_text comments>1</gsx:complete_text comments>
+  <gsx:created_date>1</gsx:created_date>
+  <gsx:updated_date>1</gsx:updated_date>
+  <gsx:created_by>1</gsx:created_by>
+  <gsx:updated_by>1</gsx:updated_by>
+</entry>
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><entry xmlns="http://www.w3.org/2005/Atom" xmlns:gsx="http://schemas.google.com/spreadsheets/2006/extended"><gsx:id>1</gsx:id><gsx:status>1</gsx:status><gsx:user_email>1</gsx:user_email><gsx:url domain>1</gsx:url domain><gsx:highlighted_text>1</gsx:highlighted_text><gsx:complete_text comments>1</gsx:complete_text comments><gsx:created_date>1</gsx:created_date><gsx:updated_date>1</gsx:updated_date><gsx:created_by>1</gsx:created_by><gsx:updated_by>1</gsx:updated_by></entry>
+
+
+
+<?xml version='1.0' encoding='UTF-8'?><feed xmlns='http://www.w3.org/2005/Atom' xmlns:openSearch='http://a9.com/-/spec/opensearchrss/1.0/' xmlns:gsx='http://schemas.google.com/spreadsheets/2006/extended'><id>https://spreadsheets.google.com/feeds/list/1WngGKZHauwBqRxgC5E6DFMiJ-J8BDlN3mMaBfF4RE0M/1/public/full</id><updated>2014-09-09T21:00:24.372Z</updated><category scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#list'/><title type='text'>typos</title><link rel='alternate' type='application/atom+xml' href='https://docs.google.com/spreadsheets/d/1WngGKZHauwBqRxgC5E6DFMiJ-J8BDlN3mMaBfF4RE0M/pubhtml'/><link rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/list/1WngGKZHauwBqRxgC5E6DFMiJ-J8BDlN3mMaBfF4RE0M/1/public/full'/><link rel='http://schemas.google.com/g/2005#post' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/list/1WngGKZHauwBqRxgC5E6DFMiJ-J8BDlN3mMaBfF4RE0M/1/public/full'/><link rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/list/1WngGKZHauwBqRxgC5E6DFMiJ-J8BDlN3mMaBfF4RE0M/1/public/full'/><author><name>corbin.page</name><email>corbin.page@gmail.com</email></author><openSearch:totalResults>1</openSearch:totalResults><openSearch:startIndex>1</openSearch:startIndex><entry><id>https://spreadsheets.google.com/feeds/list/1WngGKZHauwBqRxgC5E6DFMiJ-J8BDlN3mMaBfF4RE0M/1/public/full/cokwr</id><updated>2014-09-09T21:00:24.372Z</updated><category scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#list'/><title type='text'>1</title><content type='text'>url: corbinpage.com, domainid: 1, highlightedtext: Hellow World, useremail: corbin.page@gmail.com, comments: Hellow World comments</content><link rel='self' type='application/atom+xml' href='https://spreadsheets.google.com/feeds/list/1WngGKZHauwBqRxgC5E6DFMiJ-J8BDlN3mMaBfF4RE0M/1/public/full/cokwr'/><gsx:id>1</gsx:id><gsx:url>corbinpage.com</gsx:url><gsx:domainid>1</gsx:domainid><gsx:highlightedtext>Hellow World</gsx:highlightedtext><gsx:completetext></gsx:completetext><gsx:useremail>corbin.page@gmail.com</gsx:useremail><gsx:comments>Hellow World comments</gsx:comments><gsx:createddate></gsx:createddate><gsx:updateddate></gsx:updateddate><gsx:createdby></gsx:createdby><gsx:updatedby></gsx:updatedby></entry></feed>
