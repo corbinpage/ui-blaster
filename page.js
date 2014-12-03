@@ -1,6 +1,6 @@
 $("html").click(function(e){
   console.log("div: "+ event.target.nodeName)
-
+  
 
   s = window.getSelection();
   var range = s.getRangeAt(0);
@@ -15,4 +15,10 @@ $("html").click(function(e){
   }while(range.toString().indexOf(' ') == -1 && range.toString().trim() != '');
   var str = range.toString().trim();
   console.log("word: "+ str)
-});
+
+  console.log(window.getSelection());
+  console.log(event.target);
+  var node = window.getSelection();
+
+
+}); 

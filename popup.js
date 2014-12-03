@@ -65,13 +65,13 @@
 //  });
 // }
 
-// // When the popup HTML has loaded
-// window.addEventListener('load', function(evt) {
-//   // Set click event listeners on the buttons
-//   document.getElementById("main-form").addEventListener('submit', function(){return false;});
-//   document.getElementById("cancel-button").addEventListener('click', cancelButtonClick);
-//   document.getElementById("submit-button").addEventListener('click', submitButtonClick);
+// When the popup HTML has loaded
+window.addEventListener('load', function(evt) {
+  // Set click event listeners on the buttons
+  // document.getElementById("main-form").addEventListener('submit', function(){return false;});
+  // document.getElementById("cancel-button").addEventListener('click', cancelButtonClick);
+  // document.getElementById("submit-button").addEventListener('click', submitButtonClick);
 
-//   populateHighlightedText()
+  // populateHighlightedText()
 
-// });
+});
